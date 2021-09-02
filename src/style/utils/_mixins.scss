@@ -1,0 +1,34 @@
+@mixin sr-only {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+@mixin mobile-s-only {
+    @media all and (max-width: map-get($breakpoints, mobile-s)) {
+        @content;
+    }
+}
+
+@mixin mobile-m-only {
+    @media all and (max-width: map-get($breakpoints, mobile-m)) {
+        @content;
+    }
+}
+
+@mixin mobile-l-only {
+    @media all and (max-width: map-get($breakpoints, mobile-l)) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media all and (max-width: map-get($breakpoints, laptop)) {
+        @content;
+    }
+}

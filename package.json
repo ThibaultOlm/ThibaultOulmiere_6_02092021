@@ -1,0 +1,25 @@
+{
+  "name": "P6-FishEye",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThibaultOlm/ThibaultOulmiere_6_02092021.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThibaultOlm/ThibaultOulmiere_6_02092021/issues"
+  },
+  "homepage": "https://github.com/ThibaultOlm/ThibaultOulmiere_6_02092021#readme",
+  "devDependencies": {
+    "cssnano": "^5.0.8",
+    "sass": "^1.39.0"
+  }
+}

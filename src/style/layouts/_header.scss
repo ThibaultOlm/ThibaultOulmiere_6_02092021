@@ -1,0 +1,74 @@
+// Header home page 
+
+.header {
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    @include mobile-l-only {
+        flex-direction: column;
+        text-align: left;
+        width: 100%;
+    }
+    &__help-nav {
+        position: fixed;
+        z-index: 1;
+        top: 0px;
+        left: 45%;
+        text-decoration: none;
+        padding: 3px 14px;
+        border-radius: 5px;
+        color: black;
+        font-weight: 700;
+        font-size: 0.8em;
+        background-color: $color-secondary;
+        @include mobile-l-only {
+            @include sr-only
+        }
+    }
+    &__logo {
+        margin-left: 10px;
+        @include mobile-l-only {
+            transform: scale(0.6);
+            margin-left: -18%;
+        }
+    }
+    &__navigation {
+        margin-top: 14px;
+        ul {
+            display: flex;
+            column-gap: 8px;
+            list-style-type: none;
+            @include mobile-l-only {
+                flex-wrap: wrap;
+                justify-content: center;
+                row-gap: 10px;
+                padding: 0px 40px;
+            }
+            @include mobile-s-only {
+                padding: 0px 20px;
+            }
+        }
+        a {
+            @include button-tag-white
+        }
+        .sr-only {
+            @include sr-only
+        }
+    }
+}
+
+.header-photographer {
+    margin-left: 4.5%;
+    margin-top: 2%;
+    margin-bottom: 3.5%;
+    svg {
+        transform: scale(1.3);
+        @include mobile-l-only {
+            transform: scale(0.9);
+        }
+    }
+    @include mobile-l-only {
+        margin-left: 17%;
+    }
+}
