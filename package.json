@@ -3,6 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "autoprefixer": "^10.3.4",
+    "css-mqpacker": "^7.0.0",
+    "for-in": "^1.0.2",
+    "postcss": "^8.3.6",
+    "sass": "^1.39.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html"
@@ -17,9 +25,5 @@
   "bugs": {
     "url": "https://github.com/ThibaultOlm/ThibaultOulmiere_6_02092021/issues"
   },
-  "homepage": "https://github.com/ThibaultOlm/ThibaultOulmiere_6_02092021#readme",
-  "devDependencies": {
-    "cssnano": "^5.0.8",
-    "sass": "^1.39.0"
-  }
+  "homepage": "https://github.com/ThibaultOlm/ThibaultOulmiere_6_02092021#readme"
 }
